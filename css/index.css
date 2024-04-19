@@ -1,9 +1,31 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
 body{
-    background-color: lightblue;
+    background-color: rgb(213, 229, 235);
     color:rgb(15, 11, 11);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 }
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff; /* Adjust the background color as needed */
+    z-index: 1000; /* Ensure the header appears above other content */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for depth */
+}
+
+.main-content {
+    padding-top: 100px; /* Adjust padding to prevent content from being hidden behind the fixed header */
+}
+
+
 h1,h2{
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -19,11 +41,39 @@ section{
     text-align: center;
 
 }
+ul{
+    list-style: none;
+}
 
 li{
-    background-color:rgb(168, 160, 128);
+    width: 100%;
+    background-color:rgb(199, 197, 187);
+    padding: 15px;
+   /* margin: 10px;*/
 }
 
 li a{
     color:brown;
 }
+
+.experience-item div{
+
+    display:flex;
+    justify-content: space-between;
+
+}
+p{
+    text-align: left;
+}
+
+#Connect ul {
+
+    display:flex;
+    justify-content: center;
+
+}
+.flex{
+    display:flex;
+    justify-content: flex-end;
+}
+
