@@ -1,9 +1,31 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
 body{
-    background-color: lightblue;
+    background-color: rgb(213, 229, 235);
     color:rgb(15, 11, 11);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 }
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff; /* Adjust the background color as needed */
+    z-index: 1000; /* Ensure the header appears above other content */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for depth */
+}
+
+.main-content {
+    padding-top: 100px; /* Adjust padding to prevent content from being hidden behind the fixed header */
+}
+
+
 h1,h2{
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -19,11 +41,125 @@ section{
     text-align: center;
 
 }
+ul{
+    list-style: none;
+}
 
 li{
-    background-color:rgb(168, 160, 128);
+    width: 100%;
+    background-color:rgb(199, 197, 187);
+    padding: 15px;
+   /* margin: 10px;*/
 }
 
 li a{
     color:brown;
+}
+
+/* .experience-item div{
+
+    display:flex;
+    justify-content: space-between;
+
+} */
+
+#About{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+#Skills {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+#Experience {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.experience-item {
+    background-color: rgb(199, 197, 187);
+    padding: 15px;
+}
+
+.experience-item div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.experience-item p {
+    text-align: left;
+}
+
+
+/* #Connect {
+
+    display:flex;
+    justify-content: center;
+
+}
+a{
+    margin:10px;
+    margin-top:20px;
+} */
+
+#Connect {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    justify-items: center;
+}
+
+#Connect a {
+    margin-top: 20px;
+}
+
+.flex{
+    display:flex;
+    justify-content: flex-end;
+}
+
+
+
+@media screen and (min-width: 768px) {
+    /* Add styles for tablets */
+    body {
+        font-size: 16px; /* Change font size */
+        background-color: rgb(213, 229, 235); /* Change background color */
+    }
+
+    h2 {
+        font-size: 2rem; /* Change font size */
+        color: rgb(52, 49, 49); /* Change font color */
+    }
+
+    ul {
+        padding: 20px; /* Change padding */
+        background-color: rgb(199, 197, 187); /* Change background color */
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+    /* Add styles for desktops */
+    nav {
+        background-color: #ffffff; /* Change background color */
+        font-size: 1.5rem;
+    }
+
+    .flex {
+        justify-content:flex-start; /* Change navigation alignment */
+        font-weight: bold;
+
+    }
+
+    section {
+        padding: 20px; /* Change padding */
+        margin: 10px;
+    }
+
 }

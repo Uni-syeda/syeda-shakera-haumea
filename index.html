@@ -1,12 +1,4 @@
-<!--
- * Type your name on line 1 (h1)
- * Below your name, add the phrase "About" (h2)
- * Add a paragraph below that and share a few sentences about yourself (p)
- * Under the paragraph about yourself, add the phrase "Experience" (h2)
- * Under that create a list of places you've worked or projects you've worked on (ul / li)
- * Under your list add the phrase "Connect" (h2)
- * Below that, insert links to your email, github, and any social media profiles (linkedIn, Twitter, Instagram, etc) you would like (a / can also put them in a ul / li if you wish)
--->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -15,8 +7,19 @@
     <meta name="description" content="My personal portfolio" />
     <link rel="stylesheet" href="./css/index.css">
     <title>Syeda Shakera</title>
+    <script src="https://kit.fontawesome.com/4781c655da.js" crossorigin="anonymous"></script>
   </head>
   <body>
+    <nav>
+      <ul class="flex">
+        <li><a href="#About">About</a></li>
+        <li><a href="#Skills">Skills</a></li>
+        <li><a href="#Experience">Experience</a></li>
+        <li><a href="#Projects">Projects</a></li>
+        <li><a href="#Connect">Connect</a></li>
+      </ul>
+    </nav>
+
     <section id="Intro">
       <h1>Syeda Shakera</h1>
     </section>
@@ -33,24 +36,60 @@
       </p>
     </section>
 
-    <section id="Experience">
 
-      <h2>Experience</h2>
+    <section id="Skills">
+      <h2>Skills</h2>
       <ul>
         <li>HTML</li>
         <li>CSS</li>
         <li>JAVASCRIPT</li>
+        
       </ul>
     </section>
 
-    <section id="Connect">
+    <section id="Experience">
+      <h2>Experience</h2>
+      <ul>
+        <li class="experience-item">
+          <div>
+            <h3>Job Title1</h3>
+            <span>1-1-2015</span>
+          </div>
+          <p>Ispum sjsdjlljsldls;lka</p>
+        </li>
+        <li class="experience-item">
+          <div>
+            <h3>Job Title2</h3>
+            <span>1-1-2015</span>
+          </div>
+          <p>Ispum sjsdjlljsldls;lka</p>
+        </li>
+        <li class="experience-item">
+          <div>
+            <h3>Job Title3</h3>
+            <span>1-1-2015</span>
+          </div>
+          <p>Ispum sjsdjlljsldls;lka</p>
+        </li>
+      </ul>
+    </section>
+
+    <section id="Projects">
+      <h2>Projects</h2>
+    </section>
+
+    <section>
 
       <h2>Connect</h2>
-      <ul>
-        <li><a href="Uni-syeda">Github</a></li>
-        <li><a href="https://www.linkedin.com/feed/">linkedIn</a></li>
-        <li><a href="#">Gmail</a></li>
-      </ul>
+      <div id="Connect">
+        <a href="https://github.com/Uni-syeda"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/feed/"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#gmail"><i class="fa-solid fa-envelope"></i></a>
+        <a href="#facebook"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#Instagram"><i class="fa-brands fa-square-instagram"></i></a>
+    
+      </div>
+
     </section>
 
   
