@@ -1,14 +1,16 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="My personal portfolio" />
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/index.css" />
     <title>Syeda Shakera</title>
     <script src="js/index.js" defer></script>
-    <script src="https://kit.fontawesome.com/4781c655da.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/4781c655da.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <nav>
@@ -37,12 +39,9 @@
       </p>
     </section>
 
-
     <section id="Skills">
       <h2>Skills</h2>
-      <ul>
-        
-      </ul>
+      <ul></ul>
     </section>
 
     <section id="Experience">
@@ -77,22 +76,46 @@
     </section>
 
     <section>
-
       <h2>Connect</h2>
       <div id="Connect">
-        <a href="https://github.com/Uni-syeda"><i class="fa-brands fa-github"></i></a>
-        <a href="https://www.linkedin.com/feed/"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/Uni-syeda"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a href="https://www.linkedin.com/feed/"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
         <a href="#gmail"><i class="fa-solid fa-envelope"></i></a>
         <a href="#facebook"><i class="fa-brands fa-facebook"></i></a>
         <a href="#Instagram"><i class="fa-brands fa-square-instagram"></i></a>
-    
       </div>
-
     </section>
+    <section>
+      <h2>Leave a Message</h2><br>
+      <form name="leave_message">
+        <label>
+          Name:
+          <input type="text" name="usersName" required />
+        </label><br><br>
 
+        <label>
+          Email:
+          <input type="email" name="usersEmail" required />
+        </label><br><br>
 
-    
+        <label>
+          Message:
 
-  
+          <textarea name="usersMessage" required></textarea>
+        </label><br><br>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+    <section id="messages">
+      <h2>Messages</h2>
+      <ul>
+
+      </ul>
+    </section>
   </body>
 </html>
