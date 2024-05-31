@@ -16,7 +16,7 @@ nav {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #ffffff; /* Adjust the background color as needed */
+    background-color: #91d8f4; /* Adjust the background color as needed */
     z-index: 1000; /* Ensure the header appears above other content */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for depth */
 }
@@ -28,6 +28,10 @@ nav {
 
 h1,h2{
     font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+}
+h1{
+    font-size: 2rem;
 }
 h2{
     font-size: 1.5rem;
@@ -37,7 +41,7 @@ h2{
 
 section{
     padding:10px;
-    margin:5px;
+    margin:25px;
     text-align: center;
 
 }
@@ -47,13 +51,13 @@ ul{
 
 li{
     width: 100%;
-    background-color:rgb(199, 197, 187);
+    background-color:rgb(218, 238, 246);
     padding: 15px;
    /* margin: 10px;*/
 }
 
 li a{
-    color:brown;
+    color:rgb(41, 34, 34);
 }
 
 /* .experience-item div{
@@ -62,11 +66,19 @@ li a{
     justify-content: space-between;
 
 } */
+#Intro{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
 
 #About{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
+}
+#About p{
+    border: 15px solid rgb(113, 112, 111);
 }
 
 #Skills {
@@ -82,7 +94,7 @@ li a{
 }
 
 .experience-item {
-    background-color: rgb(199, 197, 187);
+    /* background-color: rgb(133, 211, 248); */
     padding: 15px;
 }
 
@@ -122,6 +134,11 @@ a{
     display:flex;
     justify-content: flex-end;
 }
+.button{
+    padding:10px;
+    color:rgb(245, 248, 251);
+    background-color:rgb(61, 117, 141)
+}
 
 
 
@@ -139,7 +156,7 @@ a{
 
     ul {
         padding: 20px; /* Change padding */
-        background-color: rgb(199, 197, 187); /* Change background color */
+        background-color: rgb(113, 112, 111); /* Change background color */
     }
 }
 
