@@ -84,3 +84,26 @@ messageList.appendChild(newMessage);
     event.target.reset();
 });
 
+//API
+const projectsSection =  document.querySelector("#Projects");
+console.log(projectsSection);
+const projectsList =  projectsSection.querySelector("ul");
+console.log(projectsList);
+fetch("https://api.github.com/users/Uni-syeda/repos").then((res)=>{
+    console.log(res);
+    if (!res.ok){
+        throw new Error("something went wrong!");
+    }
+    return res.json()
+
+}).then((data)=>{
+    console.log(data);
+    for(let i = 0; i < data.length; i++){
+        const project = document.createElement("li");
+        project.innerText = data[i].name;
+        projectsList.appendChild(project);
+    }
+}).catch((error)=>{
+    console.warn(error);
+})
+
